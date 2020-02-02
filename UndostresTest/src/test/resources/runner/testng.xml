@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "Chrome Test Suite">
+<listeners>
+	<listener class-name="com.Test.listeners.ExtentListeners">
+    </listener>
+</listeners>
+<parameter name="Browser" value="GC" />
+<test name= "Test">
+<classes>
+<class name="com.Test.testCases.CreateRechargeTest"/>
+</classes>
+</test>
+</suite>

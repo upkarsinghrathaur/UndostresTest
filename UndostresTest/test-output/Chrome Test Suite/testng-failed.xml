@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Chrome Test Suite]">
+  <parameter name="Browser" value="GC"/>
+  <listeners>
+    <listener class-name="com.Test.listeners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Test.testCases.CreateRechargeTest">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="verifyTelecelRecharge" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- com.Test.testCases.CreateRechargeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Chrome Test Suite] -->
